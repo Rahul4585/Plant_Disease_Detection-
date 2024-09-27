@@ -74,6 +74,25 @@ We have created a web interface using Streamlit that allows users to upload imag
 ### 5. 🌐 Deployment and Testing
 Deployed the Streamlit application using Streamlit. Conducted extensive testing to ensure the application correctly predicts plant diseases and handles various image inputs effectively.
 
+## 🔍 Model Comparison
+
+<div align="center">
+  
+| **Model**                                                                                                                | **Accuracy (%)** | **Precision (%)** | **Recall (%)** | **F1-score (%)** |
+|:-------------------------------------------------------------------------------------------------------------------------:|:----------------:|:------------------:|:--------------:|:----------------:|
+| [**1. Custom CNN**](https://www.tensorflow.org/tutorials/images/cnn) | **95.78**        | **95.8776**        | **95.7818**    | **95.7857**      |
+| [**2. VGG16**](https://pytorch.org/vision/main/models/generated/torchvision.models.vgg16.html)                                                    | 95.69            | 95.8770            | 95.6901        | 95.6533          |
+| [**3. AlexNet**](https://pytorch.org/vision/main/models/generated/torchvision.models.alexnet.html) | 94.82            | 95.25              | 94.82          | 94.78            |
+| [**4. DenseNet**](https://keras.io/api/applications/densenet/) | 94.52            | 95.01              | 94.52          | 94.50            |
+
+</div>
+
+- The **Custom CNN** model outperformed all others with the highest accuracy of **95.78%** and an impressive F1-score of **95.7857%**, indicating strong predictive capability across all classes.
+- Both **VGG16** and **Custom CNN** exhibited similar precision levels, demonstrating their effectiveness in minimizing false positives.
+- **AlexNet** and **DenseNet** displayed lower metrics compared to the **Custom CNN**, highlighting the effectiveness of the custom model's architecture and tuning for this specific plant disease detection task.
+- Overall, the results indicate that convolutional neural networks can achieve high accuracy in plant disease detection, emphasizing the potential of deep learning in agricultural applications.
+
+
 ## 🧪Streamlit Application
 
 ### Upload an Image:
@@ -85,7 +104,7 @@ The application will display the predicted disease and its confidence score base
 ## 🚧 Challenges and Future Work
 
 ### Challenges:
-In plant disease detection, one significant challenge is handling imbalanced datasets, where some diseases have fewer images for training. This imbalance can bias the model towards more common classes, resulting in poor performance on rare diseases. While the provided dataset was already augmented, additional strategies such as class weighting could further enhance model robustness against imbalanced classes. Moreover, optimizing the application for real-time inference is critical, as users expect quick and accurate predictions. Achieving low latency requires careful optimization of both the model architecture and the application infrastructure, ensuring seamless user experiences without compromising prediction accuracy.
+In plant disease detection, one significant challenge is handling imbalanced datasets, where some diseases have fewer images for training. This imbalance can bias the model towards more common classes, resulting in poor performance on rare diseases. While the provided dataset was already augmented, implementing image preprocessing steps such as resizing, normalization, and further augmentation could enhance model performance. Moreover, optimizing the application for real-time inference is critical, as users expect quick and accurate predictions. Achieving low latency requires careful optimization of both the model architecture and the application infrastructure, ensuring seamless user experiences without compromising prediction accuracy.
 
 ### Future Work:
 Future enhancements could include implementing a feedback mechanism for users to report incorrect predictions, providing valuable data for model improvement and fostering community engagement. Furthermore, expanding the model to recognize a wider range of plant species and diseases is crucial to meet the diverse needs of users in agriculture. By continually updating the dataset and refining the model, the application can become a vital tool for farmers and gardeners in managing plant health effectively.
