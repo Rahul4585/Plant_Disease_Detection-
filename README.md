@@ -80,17 +80,19 @@ Deployed the Streamlit application using Streamlit. Conducted extensive testing 
   
 | **Model**                                                                                                                | **Accuracy (%)** | **Precision (%)** | **Recall (%)** | **F1-score (%)** |
 |:-------------------------------------------------------------------------------------------------------------------------:|:----------------:|:------------------:|:--------------:|:----------------:|
-| [**1. Custom CNN**](https://www.tensorflow.org/tutorials/images/cnn) | **95.78**        | **95.8776**        | **95.7818**    | **95.7857**      |
-| [**2. VGG16**](https://pytorch.org/vision/main/models/generated/torchvision.models.vgg16.html)                                                    | 95.69            | 95.8770            | 95.6901        | 95.6533          |
-| [**3. AlexNet**](https://pytorch.org/vision/main/models/generated/torchvision.models.alexnet.html) | 94.82            | 95.25              | 94.82          | 94.78            |
-| [**4. DenseNet**](https://keras.io/api/applications/densenet/) | 94.52            | 95.01              | 94.52          | 94.50            |
+| [**1. Custom CNN**](https://www.tensorflow.org/tutorials/images/cnn) | **87.56**        | **88.06**          | **87.56**      | **87.61**        |
+| [**2. DenseNet**](https://keras.io/api/applications/densenet/) | 87.41            | 89.72              | 87.41          | 87.76            |
+| [**3. AlexNet**](https://pytorch.org/vision/main/models/generated/torchvision.models.alexnet.html) | 87.12            | 88.29              | 87.12          | 87.15            |
+| [**4. VGG16**](https://pytorch.org/vision/main/models/generated/torchvision.models.vgg16.html) | 85.32            | 86.84              | 85.32          | 85.36            |
 
 </div>
 
-- The **Custom CNN** model outperformed all others with the highest accuracy of **95.78%** and an impressive F1-score of **95.7857%**, indicating strong predictive capability across all classes.
-- Both **VGG16** and **Custom CNN** exhibited similar precision levels, demonstrating their effectiveness in minimizing false positives.
-- **AlexNet** and **DenseNet** displayed lower metrics compared to the **Custom CNN**, highlighting the effectiveness of the custom model's architecture and tuning for this specific plant disease detection task.
-- Overall, the results indicate that convolutional neural networks can achieve high accuracy in plant disease detection, emphasizing the potential of deep learning in agricultural applications.
+- The **Custom CNN** model achieved the best overall performance, with the highest accuracy of **87.56%** and a strong F1-score of **87.61%**, making it the most reliable model for this task.
+- **DenseNet** recorded an accuracy of **87.41%**, but it did not surpass **Custom CNN** in overall effectiveness.
+- **AlexNet** had an accuracy of **87.12%**, falling behind the **Custom CNN**.
+- **VGG16** showed the lowest accuracy at **85.32%**, with weaker overall performance.
+
+- Overall, **Custom CNN** stands out as the best model, offering the highest accuracy and balanced performance, making it the optimal choice for this classification task.
 
 
 ## 🧪Streamlit Application
