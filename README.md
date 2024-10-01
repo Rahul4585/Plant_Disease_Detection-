@@ -123,7 +123,7 @@ The application will display the predicted disease and its confidence score base
 
 ## 📚 User Guide
 
-For detailed instructions on using the application and interpreting predictions, please refer to the [User Guide](https://github.com/username/repo-name/raw/main/User_Guide.docx).
+For detailed instructions on using the application and interpreting predictions, please refer to the [User Guide](User_Guide.docx).
 
 
 ## 🚧 Challenges and Future Work
