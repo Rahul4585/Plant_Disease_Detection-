@@ -1,8 +1,8 @@
-<div align="center">
+ <div align="center">
 
 # 🌿 Plant Disease Detection from Images 🌿
 
-</div>
+ </div>
 
 <div align="center">
 
